@@ -29,8 +29,6 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`harpadon hello PERSON`](#harpadon-hello-person)
-* [`harpadon hello world`](#harpadon-hello-world)
 * [`harpadon help [COMMAND]`](#harpadon-help-command)
 * [`harpadon plugins`](#harpadon-plugins)
 * [`harpadon plugins:install PLUGIN...`](#harpadon-pluginsinstall-plugin)
@@ -41,46 +39,7 @@ USAGE
 * [`harpadon plugins:uninstall PLUGIN...`](#harpadon-pluginsuninstall-plugin-1)
 * [`harpadon plugins:uninstall PLUGIN...`](#harpadon-pluginsuninstall-plugin-2)
 * [`harpadon plugins update`](#harpadon-plugins-update)
-
-## `harpadon hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ harpadon hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/ICEPepsiCola/harpadon/blob/v0.0.1/dist/commands/hello/index.ts)_
-
-## `harpadon hello world`
-
-Say hello world
-
-```
-USAGE
-  $ harpadon hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ oex hello world
-  hello world! (./src/commands/hello/world.ts)
-```
+* [`harpadon table [FILE]`](#harpadon-table-file)
 
 ## `harpadon help [COMMAND]`
 
@@ -331,4 +290,25 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+## `harpadon table [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ harpadon table [FILE] [-n <value>] [-f]
+
+FLAGS
+  -f, --force
+  -n, --name=<value>  name to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ harpadon table
+```
+
+_See code: [dist/commands/table.ts](https://github.com/ICEPepsiCola/harpadon/blob/v0.0.1/dist/commands/table.ts)_
 <!-- commandsstop -->
